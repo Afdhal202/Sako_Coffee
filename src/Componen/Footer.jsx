@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <section className="container mx-auto bg-zinc-500 text-center px-6  ">
+        <section className="container mx-auto bg-zinc-700 text-center px-6  ">
             <h1 className="text-5xl font-bold text-yellow-700 mb-4 py-4">Kami Buka 7 Hari Seminggu</h1>
             <p className="text-2xl underline font-bold mb-4">Pukul 11.00 - 22.00</p>
 
