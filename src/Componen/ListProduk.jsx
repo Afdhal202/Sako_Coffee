@@ -2,10 +2,10 @@ import { produkList } from "../data";
 
 function ShortCart() {
     return (
-        <section>
+        <section className="container mx-auto bg-zinc-500 min-h-screen">
 
-            <div className="text-2xl font-bold text-center mt-6"> Memu Kopi</div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-6">
+            <div className="text-4xl font-bold text-center pt-14 text-black"> Favorite Menu</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10">
                 {produkList.map((item) => (
                     <div
                         key={item.id}

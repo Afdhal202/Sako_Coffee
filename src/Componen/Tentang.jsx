@@ -19,7 +19,7 @@ function Tentang() {
     ];
 
     return (
-        <section className="bg-white shadow-lg mt-6 px-6 py-10 rounded-xl">
+        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-10 ">
             {/* judul */}
             <div className="font-semibold mb-8">
                 <div className="text-2xl text-amber-700">Tentang Produk</div>
@@ -29,7 +29,7 @@ function Tentang() {
 
             {/* konten */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="flex flex-col gap-8 w-full ">
+                <div className="flex flex-col gap-8 w-full  ">
                     {produk.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-4 border-b last:border-b-0 border-gray-200 pb-6 last:pb-0">
                             <div>{item.icon}</div>
@@ -41,7 +41,7 @@ function Tentang() {
                     ))}
                 </div>
 
-                <img src="/media/sangrai.jpeg" className="w-full h-80 object-contain " />
+                <img src="/media/sangrai.jpeg" className="w-full h-80 object-contain rounded-2xl " />
 
             </div>
         </section>
