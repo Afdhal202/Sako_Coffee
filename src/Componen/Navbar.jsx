@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router";
+
 
 function Navbar() {
     const [open, setOpen] = React.useState(false);
@@ -21,20 +23,25 @@ function Navbar() {
             {/* Horizontal menu for xl+ screens */}
             <div className="flex-none hidden lg:block">
                 <ul className="menu menu-horizontal px-4 text-lg lg:text-2xl">
-                    <li><a>Home</a></li>
-                    <li><a>Tentang Kami</a></li>
-                    <li><a>Menu</a></li>
-                    <li><a>Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/tentang">Tentang Kami</Link></li>
+                    <li><Link to="/menu">Menu</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
             {/* Dropdown menu for sm, md, lg (all except xl horizontal) */}
             {open && (
                 <div className="absolute top-full left-0 w-full bg-base-100 shadow-md lg:hidden animate-fade-in z-50">
                     <ul className="menu menu-vertical text-lg divide-y">
-                        <li><a onClick={() => setOpen(false)}>Home</a></li>
-                        <li><a onClick={() => setOpen(false)}>Tentang Kami</a></li>
-                        <li><a onClick={() => setOpen(false)}>Menu</a></li>
-                        <li><a onClick={() => setOpen(false)}>Contact</a></li>
+                        <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+
+
+                        <li><Link to="/tentang" onClick={() => setOpen(false)}>Tentang Kami</Link></li>
+
+
+                        <li><Link to="/menu" onClick={() => setOpen(false)}>Menu</Link></li>
+
+                        <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
                     </ul>
                 </div>
             )}

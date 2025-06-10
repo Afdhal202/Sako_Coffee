@@ -1,8 +1,8 @@
-export default function FormKontak() {
+export default function TentangKami() {
     return (
-        <section className="container mx-auto bg-zinc-500 min-h-screen">
+        <section className="container mx-auto bg-zinc-500 py-40 min-h-screen">
             <div className="kontak sm:p-10 p-0" id="kontak">
-                <h1 className="text-4xl font-bold mb-2 text-center" data-aos="fade-up" data-aos-duration="1000" >Kontak</h1>
+                <h1 className="text-4xl font-bold mb-2 text-center" data-aos="fade-up" data-aos-duration="1000" >Tentang Kami</h1>
                 <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >Mari terhubung dengan saya.</p>
 
                 <form action="https://formsubmit.co/afdhal20022000@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
@@ -27,5 +27,5 @@ export default function FormKontak() {
             </div>
 
         </section>
-    )
+    );
 }

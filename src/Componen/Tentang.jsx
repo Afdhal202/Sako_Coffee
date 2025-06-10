@@ -19,7 +19,7 @@ function Tentang() {
     ];
 
     return (
-        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-10 ">
+        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-10 " id="tentang">
             {/* judul */}
             <div className="font-semibold mb-8">
                 <div className="text-2xl text-amber-700">Tentang Produk</div>

@@ -8,7 +8,7 @@ import Footer from "./Componen/footer"
 import 'remixicon/fonts/remixicon.css'
 import Kontak from "./Componen/Kontak"
 import CTA from "./Componen/CTA"
-import FormKontak from "./Componen/FormContact"
+
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
       <Coffee />
       <CTA />
       <Kontak />
-      <FormKontak />
+
       <Footer />
 
 
