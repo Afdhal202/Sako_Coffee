@@ -33,7 +33,7 @@ function Kontak() {
         }
     ]
     return (
-        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-10">
+        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-10 " id="kontak">
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 lg:gap-8">
                 {info.map((item, idx) => (
 

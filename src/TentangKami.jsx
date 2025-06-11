@@ -1,31 +1,50 @@
-export default function TentangKami() {
-    return (
-        <section className="container mx-auto bg-zinc-500 py-40 min-h-screen">
-            <div className="kontak sm:p-10 p-0" id="kontak">
-                <h1 className="text-4xl font-bold mb-2 text-center" data-aos="fade-up" data-aos-duration="1000" >Tentang Kami</h1>
-                <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >Mari terhubung dengan saya.</p>
+function Tentang() {
 
-                <form action="https://formsubmit.co/afdhal20022000@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
-                    <div className="flex flex-col gap-6">
-                        <div className="flex flex-col gap-2">
-                            <label className="font-semibold">Nama Lengkap</label>
-                            <input className="border border-zinc-500 p-2 rounded-md" type="text" name="nama" placeholder="Masukkan Nama...." required />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <label className="font-semibold">Email</label>
-                            <input className="border border-zinc-500 p-2 rounded-md" type="email" name="email" placeholder="Masukkan Email..." required />
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <label className="font-semibold" htmlFor="pesan">Pesan</label>
-                            <textarea className="border border-zinc-500 p-2 rounded-md" name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan...."></textarea>
-                        </div>
-                        <div className="text-center">
-                            <button className="font-semibold bg-violet-700 hover:bg-violet-600 rounded-lg p-3 w-full cursor-pointer border border-zinc-600" type="submit">Kirim Pesan</button>
-                        </div>
-                    </div>
-                </form>
+    const produk = [
+        {
+            icon: <i className="ri-recycle-fill text-4xl text-[#b87333] mr-4"></i>,
+            title: "MODERN COFFEE BAG",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        },
+        {
+            icon: <i className="ri-cup-fill text-4xl text-[#b87333] mr-4"></i>,
+            title: "CHOICE SEEDS",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        },
+        {
+            icon: <i className="ri-sun-fill text-4xl text-[#b87333] mr-4"></i>,
+            title: "PREMIUM TASTE",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        }
+    ];
+
+    return (
+        <section className="container mx-auto bg-zinc-700 shadow-lg px-6 py-28 " id="tentang">
+            {/* judul */}
+            <div className="font-semibold mb-8">
+                <div className="text-2xl text-amber-700">Tentang Produk</div>
+                <p className="text-black text-4xl my-4">Bahan Terbaik</p>
             </div>
 
+
+            {/* konten */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="flex flex-col gap-8 w-full  ">
+                    {produk.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-4 border-b last:border-b-0 border-gray-200 pb-6 last:pb-0">
+                            <div>{item.icon}</div>
+                            <div>
+                                <h1 className="font-bold text-base text-black mb-1 tracking-wide">{item.title}</h1>
+                                <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <img src="/media/sangrai.jpeg" className="w-full h-80 object-contain rounded-2xl " />
+
+            </div>
         </section>
     );
 }
+export default Tentang;

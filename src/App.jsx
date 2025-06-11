@@ -15,15 +15,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
+
       <Hero />
       <Tentang />
-
       <ShortCart />
       <Coffee />
       <CTA />
       <Kontak />
-
       <Footer />
 
 

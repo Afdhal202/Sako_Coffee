@@ -20,7 +20,7 @@ export default function FormContact() {
                             <textarea className="border border-zinc-500 p-2 rounded-md" name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan...."></textarea>
                         </div>
                         <div className="text-center">
-                            <button className="font-semibold bg-violet-700 hover:bg-violet-600 rounded-lg p-3 w-full cursor-pointer border border-zinc-600" type="submit">Kirim Pesan</button>
+                            <button className="font-semibold bg-gray-500 hover:bg-gray-800 rounded-lg p-3 w-full cursor-pointer border border-zinc-600" type="submit">Kirim Pesan</button>
                         </div>
                     </div>
                 </form>

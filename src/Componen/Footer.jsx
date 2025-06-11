@@ -16,7 +16,7 @@ const Footer = () => {
 
                     <div className="text-right ">
                         <div>BUTUH BANTUAN?HUBUNGI KAMI</div>
-                        <h2 className="text-4xl">+6282281685799</h2>
+                        <h2 className="xl:text-4xl lg:text-2xl md:text-xl sm:text-lg">+6282281685799</h2>
                         <p>Kirim Pesan Kepada Kami </p>
                         <p>afdhal00@gmail.com</p>
                     </div>
@@ -28,9 +28,9 @@ const Footer = () => {
             <div className="mb-4 mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center">
                 <h1 className="text-2xl font-bold shadow-2xl">Sako Coffee</h1>
                 <div className="flex gap-7">
-                    <a href="#beranda">Beranda</a>
+                    <a href="#">Home</a>
                     <a href="#tentang">Tentang</a>
-                    <a href="#proyek">Proyek</a>
+                    <a href="#kontak">Contact</a>
                 </div>
                 <div className="flex items-center shadow-2xl gap-3">
                     <a href="#">
